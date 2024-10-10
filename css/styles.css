@@ -240,7 +240,7 @@ body {
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  lrine-height: 1.11;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -419,7 +419,7 @@ body {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  background-color: #2e2f42;
+  background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -442,6 +442,8 @@ body {
 .footer-btn {
   display: flex;
   gap: 16px;
+  justify-content: center;
+  align-items: center;
 
   color: #ffffff;
   font-weight: 500;
@@ -453,7 +455,7 @@ body {
   padding: 8px 24px;
   border-radius: 4px;
   background-color: #4d5ae5;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border: none;
 
@@ -465,6 +467,9 @@ body {
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: #31d0aa;
+}
+.footer-social-icon {
+  margin-left: 16px;
 }
 /*=======/Footer style ========*/
 /*=========Backdrop styles =====*/
@@ -520,6 +525,7 @@ body {
 
   width: 24px;
   height: 24px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,6 +592,7 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
+  outline: transparent;
 
   color: #2e2f42;
   font-weight: 400;
@@ -620,11 +627,12 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
+  outline: transparent;
 
   padding: 8px 16px;
   resize: none;
 
-  color: #2e2f42;
+  color: rgba(46, 47, 66, 0.4);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -644,7 +652,7 @@ body {
 }
 .form-chekbox-input:checked + .form-label-chekbox > .form-custom-chekbox {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 .form-custom-chekbox {
@@ -658,7 +666,7 @@ body {
   margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: none;
+  fill: transparent;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -666,7 +674,7 @@ body {
 }
 .modal-btn-send {
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
@@ -679,9 +687,7 @@ body {
   text-align: center;
   color: #fff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 
